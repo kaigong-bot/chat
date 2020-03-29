@@ -5,7 +5,6 @@ PORT = 8001
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  
 sock.connect((HOST, PORT))  
 
-
 def Getdata():
     while True:
         res= sock.recv(1024) 
