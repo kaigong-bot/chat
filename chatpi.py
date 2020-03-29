@@ -6,9 +6,12 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock.connect((HOST, PORT))  
 
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> parent of 76ec6eb... Revert "Update chatpi.py"
 def Getdata():
     while True:
         res= sock.recv(1024) 
