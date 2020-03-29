@@ -11,19 +11,14 @@ def Getdata():
         res= connection.recv(1024) 
         print((res).decode())
 
-
-while True:  
-    connection, address = sock.accept()              # 接受客户端的连接请求
-    threading.Thread(target=Getdata).start()
-    se=[]
-    while True:
-        se=input()
-        if se=='q':
-            break 
-        connection.send((se).encode("utf-8"))
+connection, address = sock.accept()              # 接受客户端的连接请求
+threading.Thread(target=Getdata).start()
+se=[]
+while True:
+    se=input()
     if se=='q':
-         break      
-
-   
+        break 
+    connection.send((se).encode("utf-8"))
+    
 connection.close() 
 print("连接关闭")
