@@ -1,6 +1,6 @@
 import socket
 import threading
-HOST = '192.168.1.12'        # 连接本地服务器
+HOST = '192.168.x.x'        # pc上的ip地址
 PORT = 8001               # 设置端口号
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)       # 选择IPv4地址以及TCP协议
 sock.bind((HOST, PORT))          # 绑定端口
