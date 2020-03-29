@@ -8,4 +8,4 @@ pc上运行chatpc
 
 树莓派和pc要连在同一个无线网下
 
-ip地址可以打开cmd 通过ipconfig查询得到
+ip地址可以打开pc的cmd 通过输入ipconfig查询得到
